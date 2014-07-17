@@ -1,0 +1,74 @@
+extends dashboardMain
+block content
+  .outerWrapper(style="width:100%;margin-top:42px")
+    cTitle(style="width:100%;text-align:center;float:left;font-weight:bold;font-size:14px;padding:10px 0px;background-color:#e5e5e5;margin-bottom:10px")
+      span Compose an Offer
+    form.form-horizontal(id="form2",method="post",action="/dashboard/offers/add/imgUpload",enctype='multipart/form-data')
+      .form-group
+        label.col-sm-2.control-label(style="font-size:.85em") Promotion Image
+        .col-sm-9
+          .input-group
+            .ta(style="padding:5px 0px")
+              input(type="file",id="offerImg",name="offerImg")
+              input(type="hidden",name="testValue",value="testtest")
+              input(type="hidden",name="testValue123",value="testtest")
+    form.form-horizontal(id="form1")
+      .form-group
+        label.col-sm-2.control-label(for="examplePromoMessage1",style="font-size:.85em") Promotional Message
+        .col-sm-6
+          textarea.form-control(id="offerPromoMsg",maxLength="200",placeholder="Enter promotional message (Max: 200 characters)",rows="6",name="promo")
+      .form-group
+        label.col-sm-2.control-label(for="exampleProName1",style="font-size:.85em") Product Name
+        .col-sm-6
+          input.form-control(id="offerProduct",type="text",maxLength="24",placeholder="Enter Product Name (Max: 24 characters)",name="productName")
+      .form-group
+        label.col-sm-2.control-label(for="exampleProName1",style="font-size:.85em") Discount Value
+        .col-sm-9
+          .col-sm-4(style="padding:0px")
+            input.form-control(id="offerDiscount",type="text",placeholder="Enter Discount Value (Max: 3 digits)",maxLength="3",name="discount")
+          .col-sm-2
+            .radio
+              label Value in $
+                input(type="radio",name="discountType",id="radioDollar",value="d11")
+          .col-sm-2
+            .radio
+              label Value in %
+                input(type="radio",name="discountType",id="radioPercent",value="p11")
+      link(rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css")
+      script(src="//code.jquery.com/ui/1.10.4/jquery-ui.js")
+      script  $(function() {$( "#datepicker" ).datepicker();});
+      .form-group
+        label.col-sm-2.control-label(for="exampleProName1",style="font-size:.85em") Publish Date
+        .col-sm-3
+          input.form-control(type="text",id="datepicker")
+          input.pDD(type="hidden",name="publishDate")
+      .form-group
+        label.col-sm-2.control-label(for="exampleProName1",style="font-size:.85em") Start Time
+        .start(style="float:left;display:block;width:300px")
+          .timeLabels(style="float:left;margin:-5px 10px")
+            input.sTT(type="hidden",name="sTime")
+            input.sHourTime(type="text",style="font-size:32px;font-weight:normal;padding:0px 5px;float:left;border:none;width:46px;text-align:center",value="00")
+            label.timeSpacer(style="font-size:32px;font-weight:normal;padding:0px 5px;float:left") :
+            input.sMinuteTime(type="text",style="font-size:32px;font-weight:normal;padding:0px 5px;float:left;border:none;width:46px;text-align:center",value="00")
+            input.sMeridian(type="text",style="font-size:20px;font-weight:normal;margin:11px;float:left;border:none;width:46px;text-align:center",value="AM")
+            button.sTimePicker(onclick="sTimePicker(this)",style="float:left;margin:10px",type="button")
+              span.glyphicon.glyphicon-time
+      .form-group
+        label.col-sm-2.control-label(for="exampleProName1",style="font-size:.85em") End Time
+        .end(style="float:left;display:block;width:300px")
+          .timeLabels(style="float:left;margin:-5px 10px")
+            input.eTT(type="hidden",name="eTime")
+            input.eHourTime(type="text",style="font-size:32px;font-weight:normal;padding:0px 5px;float:left;border:none;width:46px;text-align:center",value="11")
+            label.timeSpacer(style="font-size:32px;font-weight:normal;padding:0px 5px;float:left") :
+            input.eMinuteTime(type="text",style="font-size:32px;font-weight:normal;padding:0px 5px;float:left;border:none;width:46px;text-align:center",value="45")
+            input.eMeridian(type="text",style="font-size:20px;font-weight:normal;margin:11px;float:left;border:none;width:46px;text-align:center",value="PM")
+            button.eTimePicker(onclick="eTimePicker(this)",style="margin:10px",type="button")
+              span.glyphicon.glyphicon-time
+      .ta(style="width:100%;border-top:solid 1px #e5e5e5;")
+        input.btn.btn-default(id="subOffer",type="button",value="Submit Offer",style="margin:10px;float:right;background-color:#16a085;color:#fff")
+        button.btn.btn-default(style="margin:10px;float:right;background-color:#4c4c4c;color:#fff",data-toggle="modal",data-target="#myModal",onclick="renderPreview()") Preview Offer
+        a(href="http://localhost:8080/dashboard/offers")
+          input.btn.btn-default(type="button",value="Cancel",style="margin:10px;float:right;background-color:#e5e5e5;")
+    include offerPreview
+    include offerPreview.js
+    include compose.js

@@ -1,0 +1,47 @@
+extends dashboardMain
+block content
+  .outerWrapper(style="width:100%;margin-top:42px")
+    .tc(style="width:40%;float:left")
+      .tt(style="padding:10px;background-color:#e5e5e5")
+        .ttitle(style="font-size:14px;font-weight:bold;color:#4c4c4c;") Manage Offers
+          li.btn.btn-default.btn-xs(style="float:right;background-color:#4c4c4c")
+            a(href="http://localhost:8080/dashboard/compose",style="text-decoration:none;outline:none;color:#fff;font-weight:bold;") Compose New Offer
+      .offerContentHolder
+        .offerContents
+    .tc(style="font-size:14px;font-weight:bold;padding:10px;width:1%;float:left;border-left:solid 1px #e5e5e5;height:100%;display:inline-block;position:fixed")
+    .tc(style="font-size:14px;font-weight:bold;padding:10px;width:59%;float:left;")
+      .offerContainer(style="border:solid 1px #d1d1d1;margin:auto;width:322px;border-radius:4px")
+        .imgCover(style="width:320px;height:320px;")
+          img(id="previewImg",style="width:320px;height:320px;border-top-left-radius:4px;border-top-right-radius:4px")
+          .offerBadge(style="float:right;margin:-60px 20px;position:relative;width:80px;height:80px")
+            .offerBadge(style="background-color:#fff;padding:10px;text-align:center;margin:auto;border:solid 1px #d1d1d1;position:relative;border-radius:4px;width:80px;height:80px")
+              span(id="offerVal",style="font-size:24px;display:block;")
+              span(style="font-weight:bold;display:block") Discount
+        .offerDetails(style="width:320px;margin:auto")
+          .productTitle(style="margin:10px;width:200px;min-height:20px")
+            p(style="font-weight:bold;color:#4c4c4c") Puma Shoes
+          .hldr(style="width:320px")
+            .offerDesc(style="margin:10px;min-height:20px;font-weight:normal")
+              p(style="font-size:13px;word-wrap:break-word")
+          .offerDateTime(style="width:320px;font-weight:normal")
+            .hldr(style="display:inline-block;width:100%")
+              .offerDateHldr(style="padding:0px 10px;float:left;")
+                span.offerDa(style="font-weight:bold;font-size:14px;padding:2px")
+                span.offerDt(style="font-weight:bold;font-size:14px;padding:2px")
+                span.offerM(style="font-weight:bold;font-size:14px;padding:2px")
+                span.offerAlert(style="font-size:10px;color:#8c8c8c;padding-left:4px") 2 Days to go
+              .offerTime(style="float:right;padding-right:5px")
+                .start(style="float: left;padding:0px 4px;background-color:#d1d1d1;border-radius:3px;")
+                  .sH(style="float: left;")
+                  .sSpace(style="padding:0px 2px;float: left;") :
+                  .sM(style="float: left;")
+                  .sMD(style="float: left;padding-left: 4px;")
+                .divider(style="padding:0px 5px;float:left") -
+                .end(style="float: left;padding:0px 4px;background-color:#d1d1d1;border-radius:3px;")
+                  .eH(style="float: left;")
+                  .eSpace(style="padding:0px 2px;float: left;") :
+                  .eM(style="float: left;")
+                  .eMD(style="float: left;padding-left: 4px;")
+    script.
+        var someData = !{data};
+  include offers.js

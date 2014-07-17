@@ -1,0 +1,20 @@
+extends app_main
+block content
+	.outerWrapper
+		.topFixed(style="position:fixed;z-index:1;width:100%;top:0px;background-color:#fff;border-bottom:1px solid #e5e5e5")
+			.topFloat(style="margin:auto;")
+				.topMain
+					.logoHolder
+						span.logo(style="line-height:52px;font-size:1em") InstaOffers
+						span.beta(style="font-size:.4em;color:#fff;font-weight:bold;padding:0px 5px") beta
+				.loc(style="float:right")
+					.locationName Sydney
+					.locationIcon l
+		.innerWrapper
+				.ta(style="width:100%;")
+					.tb(style="padding:10px;")
+						.tc(style="width:100%;background-color:#fff;height:52px;border:solid 1px #e5e5e5;border-radius:2px")
+							.td(style="width:88%;height:52px;float:left;overflow:hidden")
+								input.searchInput(placeholder="InstaOffers in Sydney",style="font-size:.9em")
+							.te(style="width:12%;height:52px;float:left;text-align:center")
+								.searchInputIcon(style="font-size:1.6em") s

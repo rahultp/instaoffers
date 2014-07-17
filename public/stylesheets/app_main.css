@@ -1,0 +1,193 @@
+html{
+width: 100%;
+height: 100%;
+}
+
+body{
+margin: 0px;
+padding: 0px;
+background-color: #efefef;
+height: 100%;
+font-family: "Open Sans",Helvetica,Tahoma,Arial;
+}
+.topFeatures ul li{
+-webkit-tap-highlight-color: #e8e8e8;
+}
+input{
+outline:none;
+}
+
+@font-face{
+font-family: 'Quad Icons';
+src:url("http://ec2-54-201-196-149.us-west-2.compute.amazonaws.com:8080/fonts/Quad-Icons.ttf");
+}
+@media (min-width: 800px){
+.outerWrapper{
+width: 100%;
+height: 100%;
+}
+.innerWrapper{
+width: 800px;
+height: 100%;
+padding: 0px;
+margin: 53px auto;
+}
+.topFloat{
+width: 800px;
+}
+.logoHolder{
+margin:0px 20px;
+float:left;
+text-align: center;
+}
+.logo{
+font-family: "Open Sans",Helvetica,Tahoma,Arial;
+color: #7f7f7f;
+font-size: 16px;
+font-weight: bold;
+}
+.topFeatures{
+height:52px;
+float:right;
+}
+.topFeatures li{
+float: left;
+line-height:52px;
+}
+.topFeatures li a{
+width:140px;
+height: 52px;
+text-align:center;
+text-decoration:none;
+display:block;
+}
+.topFeatures li a span{
+font-size:14px;
+font-weight:bold;
+color: #555;
+}
+}
+
+@media (max-width: 799px) and (min-width:0px){
+.outerWrapper{
+width:100%;
+height:100%;
+margin:0px;
+}
+.innerWrapper{
+width: 100%;
+height: 100%;
+padding: 0px;
+margin: 52px 0px;
+}
+.topFloat{
+width:100%;
+float:left;
+background-color:#1abc9c;
+}
+.topMain{
+float:left;
+margin:0px;
+}
+.logoHolder{
+margin:0 20px;
+float:left;
+text-align: center;
+}
+.logo{
+font-family: "Open Sans",Helvetica,Tahoma,Arial;
+color: #fff;
+font-size: 1.1rem;
+font-weight: bold;
+}
+.loc{
+float:right;
+margin:0px 20px;
+}
+.locationName{
+font-family: Helvetica;
+font-size: 1rem;
+float:left;
+color:#fff;
+line-height:52px;
+}
+.locationIcon{
+font-family:Quad Icons;
+font-size: 1rem;
+color:#fff;
+float:left;
+line-height: 52px;
+margin: 0px 10px;
+}
+.topFeatures{
+float:left;
+width:100%;
+font-size:0.725rem;
+line-spacing:0.0625rem;
+background-color: #fff;
+}
+.topFeatures li.offers{
+float:left;width:34%;height:50px;line-height:52px;
+}
+.topFeatures li.messages{
+float:left;width:33%;height:50px;line-height:52px;
+}
+.topFeatures li.profile{
+float:left;width:33%;height:50px;line-height:52px;
+}
+.topFeatures li a{
+display:block;
+text-decoration:none;
+text-align:center;
+}
+.topFeatures li a span.menuText{
+color:#6d6d6d;
+width:100%;
+}
+.topFeatures span.alert{
+line-height:0px;
+display:block;
+margin:-42px 0px;
+}
+.alert span{
+color:#fff;
+font-size:.6rem;
+font-family:Helvetica;
+font-weight:bold;
+padding: 2px;
+margin:75%;
+color:#ff6f6f;
+border-radius:0.02em;
+}
+.mainPillar{
+width:80%;
+}
+.topMain{
+display: block;
+}
+.searchBox{
+width:100%;
+float:left;
+height:52px;
+}
+.searchInput{
+padding:0px;
+margin:16px;
+border:none;
+width: 100%;
+overflow:hidden;
+font-size: 1rem;
+outline:none;
+}
+.searchInputIcon{
+font-family:Quad Icons;
+font-size: 1.2rem;
+color:#6d6d6d;
+line-height:52px;
+}
+
+
+
+
+
+}
