@@ -13,6 +13,7 @@ app.set('port',process.env.PORT || 80);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/routes/files',express.static(path.join(__dirname,'routes/files')));
 app.use(bodyParser());
 //app.use(bodyParser({uploadDir:'./uploads'}));
 app.use(busboy());

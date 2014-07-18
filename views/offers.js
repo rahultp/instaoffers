@@ -28,6 +28,7 @@
       success     : function(data){
           ttt = data['offer'];
           var item = data['offer'];
+	  $("#previewImg").attr('src','/routes/files/' + item['PromoImg']);
           $(".productTitle p").text(item['Product']);
           $(".offerDesc p").text(item['Promo']);
           if(item['DiscountType'] == 'p11')
