@@ -6,9 +6,9 @@ height: 100%;
 body{
 margin: 0px;
 padding: 0px;
-background-color: #efefef;
+background-color: #4c4c4c;
 font-family: "Open Sans",Helvetica,Tahoma,Arial;
-background-image:url('back.jpg');
+background-image:url('/images/back.jpg');
 background-repeat:no-repeat;
 background-position:0px center;
 -webkit-background-size:cover;
