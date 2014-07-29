@@ -7,8 +7,16 @@ body{
 margin: 0px;
 padding: 0px;
 background-color: #efefef;
-height: 100%;
 font-family: "Open Sans",Helvetica,Tahoma,Arial;
+background-image:url('back.jpg');
+background-repeat:no-repeat;
+background-position:0px center;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+width:auto;
+height:100%;
 }
 .topFeatures ul li{
 -webkit-tap-highlight-color: #e8e8e8;
