@@ -18,3 +18,36 @@ background-size:cover;
 width:auto;
 height:100%;
 }
+
+@media (max-width: 480px) and (min-width:800px){
+.mainRow{
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.headerHolder{
+  height: 60px;
+  width:100%;
+  padding:20px;
+}
+.header{
+  width:800px;
+  margin:auto;
+}
+.logo{
+  float:left;
+  margin-top: -6px;
+  padding-left: 30px;
+}
+.mainNav{
+  float:right;
+  color:#fff;
+  font-weight:bold;
+}
+.mainNav ul{
+  list-style: none;
+}
+
+
+
+}
