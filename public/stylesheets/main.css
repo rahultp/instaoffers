@@ -18,7 +18,7 @@ background-size:cover;
 width:auto;
 height:100%;
 }
-@media (max-width: 2048px) and (min-width:1024px){
+@media (max-width: 6000px) and (min-width:3000px){
   .mainRow{
     height:100%;
     width:100%;
@@ -59,10 +59,7 @@ height:100%;
   }
 }
 
-@media (max-width: 1023px) and (min-width:160px){
-  body{
-    background-color:#4c4c4c;
-  }
+@media (max-width: 2999px) and (min-width:160px){
   .mainRow{
     height:100%;
     width:100%;
