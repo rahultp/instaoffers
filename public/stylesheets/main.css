@@ -19,7 +19,7 @@ width:auto;
 height:100%;
 }
 
-@media (max-width: 480px) and (min-width:800px){
+@media (max-width: 800px) and (min-width:480px){
 .mainRow{
   height:100%;
   width:100%;
