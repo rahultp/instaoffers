@@ -18,7 +18,7 @@ background-size:cover;
 width:auto;
 height:100%;
 }
-@media (max-width: 6000px) and (min-width:3000px){
+@media (max-width: 6000px) and (min-width:1024px){
   .mainRow{
     height:100%;
     width:100%;
@@ -59,7 +59,7 @@ height:100%;
   }
 }
 
-@media (max-width: 2999px) and (min-width:160px){
+@media (max-width: 1024px) and (min-width:160px){
   .mainRow{
     height:100%;
     width:100%;
@@ -86,15 +86,39 @@ height:100%;
   }
   .mainNav ul{
     list-style: none;
+    font-size: 3rem;	
+  }
+  .mainNav img{
+    max-height:50px;
   }
   .mainHolder{
     width:100%;
     height:480px;
-    margin:auto;
+    margin:50px auto;
     padding:20px;
   }
+  .mainContent{
+    margin: auto;
+  }
+  .mainContent img{
+    width: 60%;
+  }
+  .downloadText{
+    font-size:5rem;
+  }	
   .footer{
     bottom: 24px;
     width:100%;
+  }
+  .footerNav{
+    width: 700px;
+    margin: auto;
+  }
+  .footerNav a{
+    font-size: 3rem;
+  } 
+  .footerNav ul{
+    margin-top: 50px;
+    padding:0px;
   }
 }
