@@ -18,7 +18,7 @@ background-size:cover;
 width:auto;
 height:100%;
 }
-@media (max-width: 2048px) and (min-width:621px){
+@media (max-width: 2048px) and (min-width:1024px){
   .mainRow{
     height:100%;
     width:100%;
@@ -53,13 +53,13 @@ height:100%;
     padding:20px;
   }
   .footer{
-    position: absolute;  
+    position: absolute;
     bottom: 24px;
     width:100%;
   }
 }
 
-@media (max-width: 620px) and (min-width:160px){
+@media (max-width: 1023px) and (min-width:160px){
   body{
     background-color:#4c4c4c;
   }
