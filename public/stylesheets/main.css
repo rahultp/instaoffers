@@ -38,6 +38,9 @@ height:100%;
     margin-top: -6px;
     padding-left: 30px;
   }
+  .logo img{
+    max-height:32px;
+  }
   .mainNav{
     float:right;
     color:#fff;
@@ -45,6 +48,14 @@ height:100%;
   }
   .mainNav ul{
     list-style: none;
+    font-size:1em;
+  }
+  .mainNav img{
+    max-height: 32px;
+  }
+  .mainContent{
+    width:600px;
+    margin:auto;
   }
   .mainHolder{
     width:100%;
@@ -52,10 +63,17 @@ height:100%;
     margin:auto;
     padding:20px;
   }
+  .downloadHolder{
+    font-size:3.6em;
+  }
   .footer{
     position: absolute;
     bottom: 24px;
     width:100%;
+    font-size: 1.6rem;
+  }
+  .footerNav{
+    width:600px;
   }
 }
 
@@ -78,6 +96,9 @@ height:100%;
     float:left;
     margin-top: -6px;
     padding-left: 30px;
+  }
+  .logo img{
+    max-height: 50px;
   }
   .mainNav{
     float:right;
