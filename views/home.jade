@@ -45,6 +45,7 @@ block content
 								span.sr-only Close
 							h4.modal-title(id="myModalLabel") Modal title
 						.modal-footer(style="margin-top:0px")
+							.fb-login-button(data-max-rows="4",data-size="large",data-show-faces="false",data-auto-logout-link="false")
 							button.btn.btn-default(type="button",data-dismiss="modal",style="width:100%")
 								fb:login-button(scope="public_profile,email",onlogin="checkLoginState();",style="width:100%")
 							button.btn.btn-default(type="button",data-dismiss="modal",style="width:100%") Close
