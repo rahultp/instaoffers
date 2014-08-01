@@ -31,6 +31,7 @@ block content
 				.footerNav(style="margin:auto;")
 					ul(style="list-style:none;font-weight:bold;float:left;")
 						li(style="float:left")
+							button.btn.btn-primary.btn-lg(data-toggle="modal",data-target="#loginModal") Launch demo modal
 							a(style="color:#fff;text-decoration:none;padding:14px",href="http://www.instaoffers.co/dashboard") Business
 						li(style="float:left")
 							a(style="color:#fff;text-decoration:none;padding:14px",href="http://www.instaoffers.co/team") Team
@@ -38,3 +39,15 @@ block content
 							a(style="color:#fff;text-decoration:none;padding:14px",href="http://www.instaoffers.co/support") Support
 						li(style="float:left")
 							a(style="color:#fff;text-decoration:none;padding:14px") @2014 InstaOffers
+			.modal.fade(id="loginModal",tabindex="-1",role="dialog",aria-labelledby="loginModalLabel"aria-hidden="true")
+				.modal-dialog
+					.modal-content
+						.modal-header
+							button.close(type="button",data-dismiss="modal")
+								span(aria-hidden="true") &times;
+								span.sr-only Close
+        			h4.modal-title(id="myModalLabel") Modal title
+      			.modal-body
+      			.modal-footer
+        			button.btn.btn-default(type="button",data-dismiss="modal") Close
+							button.btn.btn-primary(type="button",data-dismiss="modal") Save Changes
