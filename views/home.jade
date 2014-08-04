@@ -37,15 +37,10 @@ block content
 						li(style="float:left")
 							a(style="color:#fff;text-decoration:none;padding:14px") @2014 InstaOffers
 			.modal.fade(id="loginModal",tabindex="-1",role="dialog",aria-labelledby="loginModalLabel",aria-hidden="true")
-				.modal-dialog
+				.modal-dialog.modal-sm.modal-dialog-custom
 					.modal-content(style="background-color:#e5e5e5")
 						.modal-header
-							button.close(type="button",data-dismiss="modal")
-								span(aria-hidden="true") &times;
-								span.sr-only Close
-							h4.modal-title(id="myModalLabel") Modal title
-						.modal-footer(style="margin-top:0px")
-							.fb-login-button(data-max-rows="4",data-size="large",data-show-faces="false",data-auto-logout-link="false")
-							button.btn.btn-default(type="button",data-dismiss="modal",style="width:100%")
-								fb:login-button(scope="public_profile,email",onlogin="checkLoginState();",style="width:100%")
-							button.btn.btn-default(type="button",data-dismiss="modal",style="width:100%") Close
+							h4.modal-title(id="myModalLabel",style="font-family:Open Sans,Helvetic,Tahoma,Arial;text-align:center") InstaOffers Dashboard
+						.modal-body(style="margin:0px 5%")								
+							button(type="button",onclick="FB.login()",style="background-color:#3b5998;color:#fff;font-family:Open Sans,Helvetica,Tahoma,Arial;text-shadow:1px 0px 1px #4c4c4c, -1px 0px 1px #4c4c4c,0px 1px 0px #4c4c4c,0px -1px 0px #4c4c4c;width:100%") Login using Facebook
+							button(type="button",data-dismiss="modal",style="width:22%;font-family:Open Sans,Helvetica,Tahoma,Arial;width:100%;background-color:#fff;text-shadow:1px 0px 1px #e5e5e5, -1px 0px 1px #e5e5e5,0px 1px 0px #e5e5e5,0px -1px 0px #e5e5e5") Exit
